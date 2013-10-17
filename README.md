@@ -1,0 +1,5 @@
+pylint-common
+=============
+
+Pylint plugin for augmenting and improving error detection and analysis in the standard Python library.
+
