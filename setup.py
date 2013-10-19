@@ -20,5 +20,5 @@ setup( name='pylint-common',
        packages=_packages,
        install_requires=['pylint', 'astroid', 'pylint-plugin-utils'],
        license='GPLv2',
-       keywords=('pylint', 'plugin', 'stdlib')
+       keywords='pylint stdlib plugin'
 )
