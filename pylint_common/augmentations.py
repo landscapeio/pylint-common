@@ -13,6 +13,7 @@ def allow_attribute_comments(chain, node):
     # TODO: find the relevant citation for why this is the correct way to comment attributes
     if isinstance(node.previous_sibling(), astroid.Assign) and \
             isinstance(node.parent, astroid.Class) and \
+            isinstance(node.value, astroid.Const) and \
             isinstance(node.value.value, basestring):
         return
     chain()
