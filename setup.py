@@ -11,14 +11,15 @@ _short_description = "pylint-common is a Pylint plugin to improve Pylint error a
                      "standard Python library"
 
 
-setup( name='pylint-common',
-       url='https://github.com/landscapeio/pylint-common',
-       author='landscape.io',
-       author_email='code@landscape.io',
-       description=_short_description,
-       version=_version,
-       packages=_packages,
-       install_requires=['pylint>=1.0', 'astroid>=1.0', 'pylint-plugin-utils>=0.1'],
-       license='GPLv2',
-       keywords='pylint stdlib plugin'
+setup(
+    name='pylint-common',
+    url='https://github.com/landscapeio/pylint-common',
+    author='landscape.io',
+    author_email='code@landscape.io',
+    description=_short_description,
+    version=_version,
+    packages=_packages,
+    install_requires=['pylint>=1.0', 'astroid>=1.0', 'pylint-plugin-utils>=0.1'],
+    license='GPLv2',
+    keywords='pylint stdlib plugin'
 )
