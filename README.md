@@ -6,8 +6,7 @@
 [![Code Quality](https://landscape.io/github/landscapeio/pylint-common/master/landscape.png)](https://landscape.io/github/landscapeio/pylint-common)
 [![Coverage Status](https://coveralls.io/repos/landscapeio/pylint-common/badge.png)](https://coveralls.io/r/landscapeio/pylint-common)
 [![Latest Version](https://pypip.in/v/pylint-common/badge.png)](https://crate.io/packages/pylint-common)
-[![Downloads](https://pypip.in/d/pylint-common/badge.png)](https://crate.io/packages/pylint-
-common)
+[![Downloads](https://pypip.in/d/pylint-common/badge.png)](https://crate.io/packages/pylint-common)
 
 ## About
 
