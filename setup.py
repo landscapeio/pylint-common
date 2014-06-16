@@ -1,10 +1,9 @@
 # -*- coding: UTF-8 -*-
 from distutils.core import setup
 from setuptools import find_packages
-from pylint_common.__pkginfo__ import get_version
 
 
-_version = get_version()
+_version = '0.2'
 _packages = find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"])
 
 _short_description = "pylint-common is a Pylint plugin to improve Pylint error analysis of the" \
