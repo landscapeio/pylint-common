@@ -2,6 +2,13 @@ from pylint.checkers.base import BasicChecker, astroid
 from pylint_plugin_utils import augment_visit
 
 
+# grumble grumble python3 grumble
+try:
+    BASESTRING = basestring
+except NameError:
+    BASESTRING = str
+
+
 def allow_attribute_comments(chain, node):
     """
     This augmentation is to allow comments on class attributes, for example:
@@ -15,7 +22,7 @@ def allow_attribute_comments(chain, node):
     if isinstance(node.previous_sibling(), astroid.Assign) and \
             isinstance(node.parent, (astroid.Class, astroid.Module)) and \
             isinstance(node.value, astroid.Const) and \
-            isinstance(node.value.value, basestring):
+            isinstance(node.value.value, BASESTRING):
         return
 
     chain()
