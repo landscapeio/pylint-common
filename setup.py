@@ -1,4 +1,5 @@
 # -*- coding: UTF-8 -*-
+import sys
 from distutils.core import setup
 from setuptools import find_packages
 
@@ -22,6 +23,20 @@ _classifiers = (
     'Programming Language :: Python :: 3.5',
 )
 
+
+if sys.version_info < (2, 7):
+    # pylint 1.4 dropped support for Python 2.6
+    _install_requires = [
+        'pylint>=1.0,<1.4',
+        'astroid>=1.0,<1.3.0',
+        'logilab-common>=0.60.0,<0.63',
+    ]
+else:
+    _install_requires = [
+        'pylint>=1.0',
+    ]
+
+
 setup(
     name='pylint-common',
     url='https://github.com/landscapeio/pylint-common',
@@ -30,7 +45,7 @@ setup(
     description=_short_description,
     version=_version,
     packages=_packages,
-    install_requires=['pylint>=1.0', 'astroid>=1.0', 'pylint-plugin-utils>=0.2.1'],
+    install_requires=_install_requires,
     license='GPLv2',
     classifiers=_classifiers,
     keywords='pylint stdlib plugin',
