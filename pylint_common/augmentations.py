@@ -29,4 +29,9 @@ def allow_attribute_comments(chain, node):
 
 
 def apply_augmentations(linter):
-    augment_visit(linter, BasicChecker.visit_discard, allow_attribute_comments)
+    if hasattr(BasicChecker, 'visit_expr'):
+        expr_meth = getattr(BasicChecker, 'visit_expr')
+    else:
+        expr_meth = getattr(BasicChecker, 'visit_discard')
+
+    augment_visit(linter, expr_meth, allow_attribute_comments)
