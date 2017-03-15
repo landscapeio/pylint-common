@@ -11,7 +11,7 @@ _short_description = ("pylint-common is a Pylint plugin to improve Pylint "
                       "error analysis of the standard Python library")
 
 _classifiers = (
-    'Development Status :: 5 - Prouction/Stable',
+    'Development Status :: 6 - Mature',
     'Environment :: Console',
     'Intended Audience :: Developers',
     'Operating System :: Unix',
