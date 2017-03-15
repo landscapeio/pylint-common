@@ -4,14 +4,14 @@ from distutils.core import setup
 from setuptools import find_packages
 
 
-_version = '0.2.2'
+_version = '0.2.3'
 _packages = find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"])
 
 _short_description = ("pylint-common is a Pylint plugin to improve Pylint "
                       "error analysis of the standard Python library")
 
 _classifiers = (
-    'Development Status :: 4 - Beta',
+    'Development Status :: 5 - Prouction/Stable',
     'Environment :: Console',
     'Intended Audience :: Developers',
     'Operating System :: Unix',
