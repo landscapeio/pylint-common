@@ -3,7 +3,7 @@ import sys
 from setuptools import find_packages, setup
 
 
-_version = '0.2.4'
+_version = '0.2.5'
 _packages = find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"])
 
 _short_description = ("pylint-common is a Pylint plugin to improve Pylint "
@@ -30,7 +30,7 @@ if sys.version_info < (2, 7):
         'pylint>=1.0,<1.4',
         'astroid>=1.0,<1.3.0',
         'logilab-common>=0.60.0,<0.63',
-        'pylint-plugin-utils>=0.2.5',
+        'pylint-plugin-utils>=0.2.6',
     ]
 else:
     _install_requires = [
