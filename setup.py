@@ -29,10 +29,12 @@ if sys.version_info < (2, 7):
         'pylint>=1.0,<1.4',
         'astroid>=1.0,<1.3.0',
         'logilab-common>=0.60.0,<0.63',
+        'pylint-plugin-utils>=0.2.4',
     ]
 else:
     _install_requires = [
         'pylint>=1.0',
+        'pylint-plugin-utils>=0.2.4',
     ]
 
 
