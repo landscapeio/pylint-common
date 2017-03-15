@@ -35,7 +35,7 @@ if sys.version_info < (2, 7):
 else:
     _install_requires = [
         'pylint>=1.0',
-        'pylint-plugin-utils>=0.2.5',
+        'pylint-plugin-utils>=0.2.6',
     ]
 
 
