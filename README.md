@@ -1,5 +1,9 @@
 # pylint-common
 
+## Note: No longer maintained
+
+This was used as part off [prospector](https://github.com/landscapeio/prospector) but has been removed. It is no longer maintained (in this fork at least) as most of the functions are now replaced by pylint builtins or are no longer valid.
+
 ## Status
 
 [![Build Status](https://travis-ci.org/landscapeio/pylint-common.svg?branch=master)](https://travis-ci.org/landscapeio/pylint-common)
